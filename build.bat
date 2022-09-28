@@ -1,3 +1,12 @@
-CD swagger_petstore
+cd swagger_petstore
 
-npm run build
+CALL npm install
+CALL npm run build
+CALL npm link
+
+cd ..
+
+cd use-petstore
+
+CALL npm install
+CALL npm link ..\swagger_petstore
